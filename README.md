@@ -25,3 +25,4 @@ further details.
 [1]: http://www.ruby-lang.org/en/
 [2]: http://www.partow.net/
 [3]: http://github.com/martinkozak/hashfunctions
+[4]: http://www.martinkozak.net/
