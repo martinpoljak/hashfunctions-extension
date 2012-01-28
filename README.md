@@ -19,7 +19,7 @@ http://www.partow.net/programming/hashfunctions/index.html#AvailableHashFunction
 Copyright
 ---------
 
-Copyright &copy; 2012 [Martin Kozák][3]. See `LICENSE.txt` for
+Copyright &copy; 2002 [Arash Partow][2]. Copyright &copy; 2012 [Martin Kozák][4]. See `LICENSE.txt` for
 further details.
 
 [1]: http://www.ruby-lang.org/en/
