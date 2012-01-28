@@ -2,7 +2,7 @@
 require 'mkmf'
 
 # Give it a name
-extension_name = 'generalhashfunctionsc'
+extension_name = 'generalhashfunctions_ext'
 
 # The destination
 dir_config(extension_name)

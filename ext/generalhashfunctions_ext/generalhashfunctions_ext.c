@@ -6,7 +6,7 @@
 VALUE GeneralHashFunctionsC = Qnil;
 
 // Prototype for the initialization method - Ruby calls this, not you
-void Init_generalhashfunctionsc();
+void Init_generalhashfunctions_ext();
 
 // Prototype for our methods
 VALUE method_rshash(VALUE self, VALUE str);
@@ -22,19 +22,19 @@ VALUE method_fnvhash(VALUE self, VALUE str);
 VALUE method_aphash(VALUE self, VALUE str);
 
 // The initialization method for this module
-void Init_generalhashfunctionsc() {
-	GeneralHashFunctionsC = rb_define_module("GeneralHashFunctionsC");
-	rb_define_singleton_method(GeneralHashFunctionsC, "rshash", method_rshash, 1);
-  rb_define_singleton_method(GeneralHashFunctionsC, "jshash", method_jshash, 1);
-  rb_define_singleton_method(GeneralHashFunctionsC, "pjwhash", method_pjwhash, 1);
-  rb_define_singleton_method(GeneralHashFunctionsC, "elfhash", method_elfhash, 1);
-  rb_define_singleton_method(GeneralHashFunctionsC, "bkdrhash", method_bkdrhash, 1);
-  rb_define_singleton_method(GeneralHashFunctionsC, "sdbmhash", method_sdbmhash, 1);
-  rb_define_singleton_method(GeneralHashFunctionsC, "djbhash", method_djbhash, 1);
-  rb_define_singleton_method(GeneralHashFunctionsC, "dekhash", method_dekhash, 1);
-  rb_define_singleton_method(GeneralHashFunctionsC, "bphash", method_bphash, 1);
-  rb_define_singleton_method(GeneralHashFunctionsC, "fnvhash", method_fnvhash, 1);
-  rb_define_singleton_method(GeneralHashFunctionsC, "aphash", method_aphash, 1);
+void Init_generalhashfunctions_ext() {
+	GeneralHashFunctionsExt = rb_define_module("GeneralHashFunctionsExt");
+	rb_define_singleton_method(GeneralHashFunctionsExt, "rshash", method_rshash, 1);
+  rb_define_singleton_method(GeneralHashFunctionsExt, "jshash", method_jshash, 1);
+  rb_define_singleton_method(GeneralHashFunctionsExt, "pjwhash", method_pjwhash, 1);
+  rb_define_singleton_method(GeneralHashFunctionsExt, "elfhash", method_elfhash, 1);
+  rb_define_singleton_method(GeneralHashFunctionsExt, "bkdrhash", method_bkdrhash, 1);
+  rb_define_singleton_method(GeneralHashFunctionsExt, "sdbmhash", method_sdbmhash, 1);
+  rb_define_singleton_method(GeneralHashFunctionsExt, "djbhash", method_djbhash, 1);
+  rb_define_singleton_method(GeneralHashFunctionsExt, "dekhash", method_dekhash, 1);
+  rb_define_singleton_method(GeneralHashFunctionsExt, "bphash", method_bphash, 1);
+  rb_define_singleton_method(GeneralHashFunctionsExt, "fnvhash", method_fnvhash, 1);
+  rb_define_singleton_method(GeneralHashFunctionsExt, "aphash", method_aphash, 1);
 }
 
 VALUE method_rshash(VALUE self, VALUE str) {

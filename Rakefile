@@ -13,11 +13,11 @@ spec = Gem::Specification.new do |s|
   s.homepage = ""
   s.license = "CPL"
   s.version = "1.0.0"
-  s.extensions = FileList["ext/generalhashfunctionsc/extconf.rb"]
+  s.extensions = FileList["ext/generalhashfunctions_ext/extconf.rb"]
   s.files = `git ls-files`.split("\n")
 end
 
 Gem::PackageTask.new(spec) do |pkg|
 end
 
-Rake::ExtensionTask.new('generalhashfunctionsc', spec)
+Rake::ExtensionTask.new('generalhashfunctions_ext', spec)
