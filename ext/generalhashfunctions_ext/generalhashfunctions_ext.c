@@ -3,7 +3,7 @@
 #include "AP_GeneralHashFunctions.h"
 
 // Defining a space for information and references about the module to be stored internally
-VALUE GeneralHashFunctionsC = Qnil;
+VALUE GeneralHashFunctionsExt = Qnil;
 
 // Prototype for the initialization method - Ruby calls this, not you
 void Init_generalhashfunctions_ext();
