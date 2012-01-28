@@ -1,7 +1,7 @@
 General Purpose Hash Functions Extension
 ========================================
 
-**hashfunctions-extension** is [Ruby][1] C extension which 
+**hashfunctions-extension** is a [Ruby][1] C extension which 
 implements 11 fast hash functions for general purpose 
 non-cryptographic use implemented originally by [Arash Partow][2]. 
 General pure API is available by the [**hashfunctions**][3] gem.
