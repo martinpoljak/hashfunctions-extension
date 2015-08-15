@@ -8,9 +8,11 @@ General pure API is available by the [**hashfunctions**][3] gem.
 
 Some example:
 
-    require "general-hash-functions/extension"
-    hash = GeneralHashFunctionsExt::djbhash("some string")
-    # will return the 395673328
+```ruby
+require "general-hash-functions/extension"
+hash = GeneralHashFunctionsExt::djbhash("some string")
+# will return the 395673328
+```
     
 See description of all contained functions at Arash Partow's page:
 http://www.partow.net/programming/hashfunctions/index.html#AvailableHashFunctions
@@ -19,10 +21,11 @@ http://www.partow.net/programming/hashfunctions/index.html#AvailableHashFunction
 Copyright
 ---------
 
-Copyright &copy; 2002 [Arash Partow][2]. Copyright &copy; 2012 
-[Martin Kozák][4]. See `LICENSE.txt` for further details.
+Copyright &copy; 2002 [Arash Partow][2].<br> 
+Copyright &copy; 2012 &ndash; 2015 [Martin Poljak][4].<br> 
+See `LICENSE.txt` for further details.
 
 [1]: http://www.ruby-lang.org/en/
 [2]: http://www.partow.net/
 [3]: http://github.com/martinkozak/hashfunctions
-[4]: http://www.martinkozak.net/
+[4]: http://www.martinpoljak.net/
